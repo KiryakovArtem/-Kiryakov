@@ -1,0 +1,9 @@
+- name: "First step"
+  hosts: localhost
+  tasks:
+  - name: "Set variable"
+    set_fact:
+      mytext="Hello world"
+  - name: "Show variable"
+    debug:
+      var: mytext
